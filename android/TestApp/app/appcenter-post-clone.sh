@@ -8,5 +8,5 @@ ROOT_COMMIT=$(get_commit)
 SUBDIR_COMMIT=$(get_commit ../)
 
 if [ "$SUBDIR_COMMIT" != "$ROOT_COMMIT" ]; then
-    exit
+    exit 0
 fi
